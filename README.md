@@ -3,7 +3,7 @@
 ## Publication
 **Our paper:** *A Dual-stage Information Bottleneck Fusion Framework for Interpretable Multimodal Sleep Analysis*  
 **Status: 🔄 Major revision**  
-**Journal:** Information Fusion, 2025
+**Journal:** Information Fusion (IF=14.8), 2025
 ![image](https://github.com/fdu-harry/XSleepFusion/blob/main/XSleepFusion.jpg)
 
 # Time Series Classification Models
