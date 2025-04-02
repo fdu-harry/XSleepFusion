@@ -1,9 +1,15 @@
 # XSleepFusion
-XSleepFusion: A Dual-stage Information Bottleneck Fusion Framework for Interpretable Multimodal Sleep Analysis
+
+## Publication
+**Our paper:** *A Dual-stage Information Bottleneck Fusion Framework for Interpretable Multimodal Sleep Analysis*  
+**Status:** <span style="color: red">**Major revision**</span>  
+**Journal:** Information Fusion, 2025
 
 # Time Series Classification Models
 
 This repository contains implementations of various deep learning models for time series classification. Each model accepts input shape of (batch_size, 3, 256).
+
+Note: For comparison models, the number of input channels can be adjusted by modifying the intermediate convolutional channel parameters in their respective .py files. The default setting is 3 channels.
 
 ## Model Files and Their Corresponding Papers
 
