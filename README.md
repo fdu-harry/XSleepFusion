@@ -4,6 +4,7 @@
 **Our paper:** *A Dual-stage Information Bottleneck Fusion Framework for Interpretable Multimodal Sleep Analysis*  
 **Status: 🔄 Major revision**  
 **Journal:** Information Fusion, 2025
+![image](https://github.com/fdu-harry/XSleepFusion/blob/main/XSleepFusion.jpg)
 
 # Time Series Classification Models
 
@@ -60,5 +61,3 @@ The following files are dependencies required by the main models:
 - `masking.py`: Masking utilities
 - `Model_loading.py`: Model loading utilities
 - `AutoCorrelation.py`: Auto-correlation layer implementations
-- 
-![image](https://github.com/fdu-harry/XSleepFusion/blob/main/XSleepFusion.jpg)
