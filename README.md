@@ -2,7 +2,7 @@
 
 ## Publication
 **Our paper:** *A Dual-stage Information Bottleneck Fusion Framework for Interpretable Multimodal Sleep Analysis*  
-**Status:** <span style="color: red">**Major revision**</span>  
+**Status: 🔄 Major revision**  
 **Journal:** Information Fusion, 2025
 
 # Time Series Classification Models
@@ -15,37 +15,37 @@ Note: For comparison models, the number of input channels can be adjusted by mod
 
 ### Core Models
 - `Pyramid_CNN.py`: Pyramid CNN model
-  > "Multi-Scale Convolutional Neural Networks for Time Series Classification" (2020)
+  > "EEGWaveNet: Multiscale CNN-based spatiotemporal feature extraction for EEG seizure detection" (2021)
 
 - `ResNet_1D.py`: 1D ResNet model
-  > "Deep Residual Learning for Image Recognition" (2016)
+  > "Deep residual learning for image recognition" (2016)
 
 - `MACNN.py`: Multi-Attention CNN model
-  > "Multi-Attention Convolutional Neural Network for Time Series Classification" (2021)
+  > "Multi-scale attention convolutional neural network for time series classification" (2021)
 
 - `Hybrid_Net.py`: Hybrid CNN-Transformer model
-  > "Hybrid CNN-Transformer Networks for Time Series Classification" (2022)
+  > "A hybrid transformer model for obstructive sleep apnea detection based on self-attention mechanism using single-lead ECG" (2022)
 
 - `Transformer.py`: Standard Transformer model
-  > "Attention Is All You Need" (2017)
+  > "Attention is all you need" (2017)
 
 - `ViT_1D.py`: Vision Transformer for 1D signals
-  > "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" (2021)
+  > "An image is worth 16x16 words: Transformers for image recognition at scale" (2020)
 
 - `SwinT_1D.py`: Swin Transformer for 1D signals
-  > "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows" (2021)
+  > "Swin transformer: Hierarchical vision transformer using shifted windows" (2021)
 
 - `Reformer.py`: Reformer model
-  > "Reformer: The Efficient Transformer" (2020)
+  > "Reformer: The efficient transformer" (2020)
 
 - `Informer.py`: Informer model
-  > "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting" (2021)
+  > "Informer: Beyond efficient transformer for long sequence time-series forecasting" (2021)
 
 - `Autoformer.py`: Autoformer model
-  > "Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting" (2021)
+  > "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting" (2021)
 
 - `cross_former.py`: Crossformer model
-  > "Crossformer: A Versatile Vision Transformer Based on Cross-scale Attention" (2022)
+  > "Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting" (2022)
 
 ### Dependency Files
 The following files are dependencies required by the main models:
