@@ -56,6 +56,6 @@ class MACNN(nn.Module):
 # model = MACNN()
 
 # # Example usage
-# input_tensor = torch.randn(1, 1, 256)
+# input_tensor = torch.randn(1, 3, 256)
 # output = model(input_tensor)
 # print(output)  # This will print the 2-class probabilities
