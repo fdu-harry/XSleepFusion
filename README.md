@@ -47,7 +47,7 @@ Note: For comparison models, the number of input channels can be adjusted by mod
   > "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting" (2021)
 
 - `cross_former.py`: Crossformer model
-  > "Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting" (2022)
+  > "Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting" (2023)
 
 ### Dependency Files
 The following files are dependencies required by the main models:
