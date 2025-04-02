@@ -15,7 +15,7 @@ Note: For comparison models, the number of input channels can be adjusted by mod
 
 ## Model Files and Their Corresponding Papers
 
-### Core Models
+### Baseline Models
 - `Pyramid_CNN.py`: Pyramid CNN model
   > "EEGWaveNet: Multiscale CNN-based spatiotemporal feature extraction for EEG seizure detection" (2021)
 
