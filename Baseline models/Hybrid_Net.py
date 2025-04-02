@@ -20,7 +20,7 @@ SIG_LEN = 256
 ecg_lead=3
 feature_attn_len=64
 
-#sublayer.py   -> main.py 8 click
+
 class MultiHeadAttention(nn.Module):
     ''' Multi-Head Attention module '''
 
@@ -99,7 +99,7 @@ class SDPAttention(nn.Module):
 
         return output, attn
     
-#block.py   -> main.py 7 click
+
 class PositionwiseFeedForward(nn.Module):
     ''' A two-feed-forward-layer module '''
 
@@ -186,7 +186,7 @@ class EncoderLayer(nn.Module):
 
         return enc_output, enc_slf_attn
 
-#model.py   -> main.py 6 click
+
 class Encoder(nn.Module):
     ''' A encoder model with self attention mechanism. '''
 
@@ -224,9 +224,9 @@ class Encoder(nn.Module):
 #         enc_output = self.pool(enc_output)
         enc_output = enc_output.transpose(1, 2)
         b1, b2, b3 = self.position_enc(src_pos).shape
-#         enc_output.add_(nn.Parameter(torch.randn(1, b2, b3).to(torch.device("cuda:0"))))#可训练位置编码
+#         enc_output.add_(nn.Parameter(torch.randn(1, b2, b3).to(torch.device("cuda:0"))))
     
-        enc_output.add_(self.position_enc(src_pos))#不可训练位置编码
+        enc_output.add_(self.position_enc(src_pos))
         
         attn_list = []
 
@@ -280,24 +280,22 @@ class Transformer(nn.Module):
 
         self.linear1_cov = nn.Conv1d(feature_attn_len, 1, kernel_size=1)
         self.linear1_linear = nn.Linear(d_model, class_num)#64=>2
-#         # try different linear style(未連接手工特徵)
-#         self.linear2_cov = nn.Conv1d(d_model, 1, kernel_size=1)
-#         self.linear2_linear = nn.Linear(d_feature, class_num)
+
 
     def forward(self, src_seq):
         res = self.resconv1(src_seq)
         res = self.respool1(res)
         res = self.resconv2(res)
         res = self.respool2(res)
-        src_seq1 = self.src_word_emb(src_seq)#嵌入
+        src_seq1 = self.src_word_emb(src_seq)
         src_seq1 = self.pool1(src_seq1)
         src_seq1 = self.conv2(src_seq1)
         src_seq1 = self.pool2(src_seq1)
-        src_seq2 = self.src_word_emb1(src_seq)#嵌入
+        src_seq2 = self.src_word_emb1(src_seq)
         src_seq2 = self.pool3(src_seq2)
         src_seq2 = self.conv4(src_seq2)
         src_seq2 = self.pool4(src_seq2)
-        src_seq3 = self.src_word_emb2(src_seq)#嵌入
+        src_seq3 = self.src_word_emb2(src_seq)
         src_seq3 = self.pool5(src_seq3)
         src_seq3 = self.conv6(src_seq3)
         src_seq3 = self.pool6(src_seq3)
@@ -312,7 +310,6 @@ class Transformer(nn.Module):
         
         src_seq = torch.add(src_seq,res)
         
-#         print(src_seq.size())#输出特征维度
         b, _, l = src_seq.size()
         src_pos = torch.LongTensor(
             [list(range(1, l + 1)) for i in range(b)]
